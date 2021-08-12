@@ -138,13 +138,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="dropdown-menu dropdown-menu-create">
 
         <li>
-            <a href="#" onclick="zE.activate({hideOnClose: true});amplitudeTrackCtaHelp('quick_search');return false;">Quick Search</a>
+            <a href="/style" onclick="amplitudeTrackCtaHelp('quick_search');">Create a Video</a>
         </li>
         <li>
-            <a href="https://ga.vyond.com/zendesk_sso_login" onclick="amplitudeTrackCtaHelp('help_center');" target="_blank">Help Center</a>
+            <a href="/cc/edit?from=videolist" onclick="amplitudeTrackCtaHelp('help_center');">Create a Character</a>
         </li>
+	<li class="divider"></li>
         <li>
-            <a href="https://product.vyond.com/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">What’s New</a>
+            <a href="http://www.vyond.com/showcase/templates/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">Browse Template Library</a>
         </li>
     </ul>
 </li>
