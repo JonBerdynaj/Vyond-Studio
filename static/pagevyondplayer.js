@@ -12,7 +12,7 @@ function toParamString(table) {
 	).join(' ');
 }
 function toObjectString(attrs, params) {
-	return `<object id="obj" ${Object.keys(attrs).map(key =>
+	return `<object ${Object.keys(attrs).map(key =>
 		`${key}="${attrs[key].replace(/"/g, "\\\"")}"`
 	).join(' ')}>${toParamString(params)}</object>`;
 }
@@ -26,7 +26,7 @@ module.exports = function (req, res, url) {
           case '/videos/': {
 			attrs = {
 				data: process.env.SWF_URL + '/player.swf',
-				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
+				type: 'application/x-shockwave-flash', width: '100%', height: '100%', id: 'Player',
 			};
 			params = {
 				flashvars: {
@@ -188,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <li>
-<a href="#" oneclick="redirectWithFlashvars()"><span class="link-pencil"></span></a>
+<a href="#" oneclick="redirectWithFlashVars(flashvars.movieId)"><span class="link-pencil"></span></a>
 </li>
 
 <script>
@@ -255,7 +255,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<tbody></tbody>
 		<tfoot>
 			<tr>
-				<td colspan="127"><a id="load_more" href="javascript:;">LOAD MORE...</a></td>
+				<td colspan="127"><a id="load_more" oneclick="loadRows()" href="javascript:;">LOAD MORE...</a></td>
 			</tr>
 		</tfoot>
 	</table>
@@ -286,7 +286,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="offer_container">
 </div>
 <script type="text/javascript">
-    </script>
+function redirectWithFlashVars(flashvars.movieId) {
+		window.open('/videos/edit/?movieId=' + flashvars.movieId + ');
+	}
+</script>
 
 <script type="text/javascript">
 	const closeReq = new XMLHttpRequest();
@@ -312,7 +315,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			const tbl = json[c];
 			const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
 			tbody.insertAdjacentHTML('beforeend',
-				'<tr><td><img src="/movie_thumbs/' + tbl.id + '"></td><td><div>' + tbl.title + '</div><div>' + tbl.durationString + '</div></div></td><td><span>' + date.match(/./g).join('</span><span>') + '</span></td><td><a href="/videos/?movieId=' + tbl.id + '"></a></td></tr>');
+				'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title + '</div><div>' + tbl.desc + '</div><div>' + tbl.durationString + '</div></div></div></div></td><td><span>' + date + '</span></td><td><a href="/videos/?movieId=' + tbl.id + '&movieTitle=' + tbl.title + '&movieDesc=' + tbl.desc + '&duration=' + tbl.durationString + '&date=' + date + '"></a></td></tr>');
 		}
 	}
 
@@ -321,10 +324,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		if (listReq.readyState != 4) return;
 		json = JSON.parse(listReq.responseText);
 		loadRows();
-	}
-
-	function popup(id) {
-		window.open('/videos/?movieId=' + id, 'MsgWindow', 'width=1280,height=720,left=' + (screen.width / 2 - 640) + ',top=' + (screen.height / 2 - 360));
 	}
 </script>
 <style>
