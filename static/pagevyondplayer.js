@@ -114,7 +114,9 @@ dataLayer.push({"userId":"0qgLvWzILhPQ"});
 <!-- Google Tag Manager -->
 
 <script>
-
+function redirectWithFlashvars() {
+		href('/videos/edit/?movieId='+flashvars.movieId+')
+	}
 </script>
 
 <!-- Start of Zendesk Widget script -->
@@ -186,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <li>
-<a href="/videos/edit/?movieId='+flashvars.movieId'"><span class="link-pencil"></span>
+<a oneclick="redirectWithFlashvars()"><span class="link-pencil"></span></a>
 </li>
 
 <script>
