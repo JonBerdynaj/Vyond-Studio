@@ -278,7 +278,8 @@ ${toObjectString(attrs, params)}
 <script type="text/javascript">
 
 </script>
-
+<style>
+.link-pencil{display:inline-block;width:12px;height:0;padding-bottom:12px;background:transparent url('../pages/img/vyond/pencil.png') no-repeat 0 0;background-size:cover;margin-left:8px}
 </body>
 </html>`);
 	return true;
