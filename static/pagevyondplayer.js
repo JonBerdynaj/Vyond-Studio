@@ -188,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <li>
-<a href="#" oneclick="redirectWithFlashVars(flashvars.movieId)"><span class="link-pencil"></span></a>
+<a href="#" oneclick="RedirectMovieIdWithFlashVars()"><span class="link-pencil"></span></a>
 </li>
 
 <script>
@@ -286,9 +286,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="offer_container">
 </div>
 <script type="text/javascript">
-function redirectWithFlashVars(flashvars.movieId) {
-		window.open('/videos/edit/?movieId=' + flashvars.movieId + ');
-	}
+function RedirectMovieIdWithFlashVars() {
+'<a href="/videos/edit/?movieId=' + flashvars.movieId + '"></a>'
 </script>
 
 <script type="text/javascript">
