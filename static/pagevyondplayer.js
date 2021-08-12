@@ -188,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <li>
-<a oneclick="redirectWithFlashvars()"><span class="link-pencil"></span></a>
+<a href="#" oneclick="redirectWithFlashvars()"><span class="link-pencil"></span></a>
 </li>
 
 <script>
