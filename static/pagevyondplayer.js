@@ -149,11 +149,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                <a class="navbar-brand" href="https://vyond2018.herokuapp.com/" title="Vyond">
-                    <img alt="Vyond" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vyond/vyond_logo.png">
+                <a class="navbar-brand" href="/videos/list" title="Go Back To The Video List">
+                    <span class="back"></span>
                 </a>
             </div>
 
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-left">
+		<form><input type="text" class="video-page__title-input HiddenTextField-sc-1bla01z-0 ifuQpm video-page__title-input HiddenTextField-sc-1bla01z-0 ifuQpm--medium" name="video_title" autocomplete="false" aria-label="Rename" value="David Beets Me Up/Grounded"></form>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
 <li class="dropdown">
@@ -177,23 +180,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         e.stopPropagation();
     });
 </script>
-<li class="dropdown">
-    <a class="hidden-sm hidden-md hidden-lg" href="/style">Create a Video</a>
-    <a class="hidden-sm hidden-md hidden-lg dropdown-toggle" href="/style" data-toggle="dropdown"><span class="dropdown-caret"></span></a>
-    <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/style">Create a Video</a><span class="SplitButton_subsidiaryPartContainer__1MQSl"><a class="btn btn-orange dropdown-toggle" href="/style" data-toggle="dropdown"><span class="dropdown-caret"></span></span</span></a>
-    <ul class="dropdown-menu dropdown-menu-create">
-
-        <li>
-            <a href="/style" onclick="amplitudeTrackCtaHelp('quick_search');">Create a Video</a>
-        </li>
-        <li>
-            <a href="/cc/edit?from=videolist" onclick="amplitudeTrackCtaHelp('help_center');">Create a Character</a>
-        </li>
-	<li class="divider"></li>
-        <li>
-            <a href="http://www.vyond.com/showcase/templates/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">Browse Template Library</a>
-        </li>
-    </ul>
+<li>
+<a href="/videos/edit/?movieId=<script>'+flashvars.movieId,'</script>"><span class="link-pencil"></span>
 </li>
 
 <script>
@@ -280,6 +268,7 @@ ${toObjectString(attrs, params)}
 </script>
 <style>
 .link-pencil{display:inline-block;width:12px;height:0;padding-bottom:12px;background:transparent url('../pages/img/vyond/pencil.png') no-repeat 0 0;background-size:cover;margin-left:8px}
+.back{display:inline-block;width:12px;height:0;padding-bottom:12px;background:transparent url('../pages/img/vyond/left.png') no-repeat 0 0;background-size:cover;margin-left:8px}
 </body>
 </html>`);
 	return true;
