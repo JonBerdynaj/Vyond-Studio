@@ -9,6 +9,7 @@ const chs = require('./character/save');
 const asu = require('./asset/upload');
 const stl = require('./static/load');
 const stp = require('./static/page');
+const scp = require('./static/pagevyondplayer');
 const asl = require('./asset/load');
 const asL = require('./asset/list');
 const ast = require('./asset/thmb');
@@ -43,6 +44,7 @@ const functions = [
 	tsv,
 	asu,
 	stp,
+	scp,
 	stl,
 ];
 
