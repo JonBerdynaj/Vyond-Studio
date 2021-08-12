@@ -115,7 +115,7 @@ dataLayer.push({"userId":"0qgLvWzILhPQ"});
 
 <script>
 function redirectWithFlashvars() {
-		href('/videos/edit/?movieId='+flashvars.movieId+')
+		window.open('/videos/edit/?movieId='+flashvars.movieId+')
 	}
 </script>
 
