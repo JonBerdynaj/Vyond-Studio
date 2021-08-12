@@ -177,7 +177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <li>
-<a href="/videos/edit/?movieId={$movieId}"><span class="link-pencil"></span>
+<a href="/videos/edit/?movieId='+flashvars.movieId'"><span class="link-pencil"></span>
 </li>
 
 <script>
