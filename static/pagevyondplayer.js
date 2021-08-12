@@ -23,8 +23,7 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-    case '/videos/': {
-			title = 'Video Player';
+          case '/videos/': {
 			attrs = {
 				data: process.env.SWF_URL + '/player.swf',
 				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
@@ -52,7 +51,7 @@ module.exports = function (req, res, url) {
 <link rel="dns-prefetch" href="https://d2bm7x1jqouzel.cloudfront.net">
 <link rel="dns-prefetch" href="//d3v4eglovri8yt.cloudfront.net">
 
-<title>Your Videos On Vyond</title>
+<title>Video Player</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -141,7 +140,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="page-container">
 
 
-<header class="video-page-topbar"><div class="video-page-topbar__logo video-page-topbar__logo--small video-page-topbar__logo--square"><a class="tooltip-trigger video-page-topbar__logo__link TooltipTrigger__StyledTooltipTrigger-sc-62e356-0 kCKWMb"><svg viewBox="0 0 128 128" class="video-page__img-back"><use xlink:href="/videos/list"></use></svg></a></div><div class="video-page-topbar__content__container"><div class="video-page-topbar__content"><div class="video-page-topbar__title"><form><input type="text" class="video-page__title-input HiddenTextField-sc-1bla01z-0 ifuQpm video-page__title-input HiddenTextField-sc-1bla01z-0 ifuQpm--medium" name="video_title" autocomplete="false" aria-label="Rename" value="'+flashvars.movieTitle+'"></form></div><nav class="video-page-topbar__nav"><div class="video-page-topbar__nav__right"><div class="video-page-topbar__nav__item"><span><button class="button  button--icon" type="button"><svg viewBox="0 0 128 128" class="button__icon"><path d="M116.5,25.4c-0.9-7.1-6.7-12.9-13.8-13.8c-5.2-0.7-10.1,1.2-13.4,4.6L15.5,89.9l-3.9,22.5l-0.2,1.2 c0,1.6,1.3,3,3,3c0.2,0,0.5,0,0.7-0.1c0,0,0,0,0,0l23.1-4l73.8-73.8C115.3,35.4,117.1,30.6,116.5,25.4z M33.2,106.8l-14.4,2.5v0 l2.5-14.4h12V106.8z M39.6,102V91.2c0-1.5-1.2-2.8-2.8-2.8H26l59.1-59.1l13.6,13.6L39.6,102z M107.4,34.2l-4.1,4.1L89.6,24.8 l4.1-4.1c2.1-2.1,5.1-3.2,8.4-2.7c4,0.6,7.2,3.9,7.9,7.8C110.6,29.1,109.5,32.2,107.4,34.2z M14.4,116.9c-1.8,0-3.2-1.5-3.2-3.2l0.2-1.3l3.9-22.6L89,15.9c3.1-3.1,7.2-4.8,11.5-4.8c0.7,0,1.4,0,2.1,0.1	c7.2,0.9,13.1,6.8,14.1,14.1c0.6,5.1-1.1,10.1-4.6,13.7l-73.8,73.8l-0.1,0l-23.2,4l0,0C14.7,116.9,14.5,116.9,14.4,116.9z M15.7,90 l-4,23.7c0,1.4,1.2,2.7,2.7,2.7c0.2,0,0.4,0,0.6-0.1l0.2,0l0,0l22.8-3.9l73.7-73.7c3.5-3.5,5.1-8.3,4.5-13.2 c-0.9-7-6.6-12.7-13.6-13.6c-4.9-0.6-9.7,1-13.2,4.5L15.7,90z M18.4,109.6l2.6-15h12.5V107l-0.2,0L18.4,109.6z M21.5,95.1 l-2.4,13.8l13.8-2.4V95.1H21.5z M39.3,102.7V91.2c0-1.4-1.1-2.5-2.5-2.5H25.4l59.7-59.7l14,14L39.3,102.7z M26.7,88.1h10.2 	c1.7,0,3.1,1.4,3.1,3.1v10.2l58.4-58.4L85.1,29.7L26.7,88.1z M103.2,38.8l-14-14l4.3-4.3c2.3-2.3,5.5-3.3,8.7-2.8 c4.1,0.7,7.4,4,8.1,8.1c0.5,3.2-0.5,6.4-2.8,8.7L103.2,38.8z M90,24.8L103.2,38l4-3.9c2.2-2.2,3.1-5.2,2.6-8.2 c-0.6-3.9-3.8-7-7.6-7.6c-3-0.5-6,0.5-8.2,2.6L90,24.8z"></path></svg></button></span></div><div class="video-page-topbar__nav__item menu__trigger"><span><button class="button  button--icon" type="button"><svg viewBox="0 0 128 128" class="button__icon"><circle cx="64.4" cy="23.2" r="13.4"></circle><circle cx="64.4" cy="64.2" r="13.4"></circle><circle cx="64.4" cy="105.1" r="13.4"></circle></svg></button></span></div><div class="video-page-topbar__nav__item"><a class="tooltip-trigger help-button TooltipTrigger__StyledTooltipTrigger-sc-62e356-0 kCKWMb"><div class="help-icon-container"><svg viewBox="0 0 20 20" class="icon"><use xlink:href="#2677f3405e297793a0b8bfc03722de29"></use></svg></div></a></div></div></nav></div></div></header>
+<div class="site-header">
+    <div class="navbar site-nav" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                <a class="navbar-brand" href="https://vyond2018.herokuapp.com/" title="Vyond">
+                    <img alt="Vyond" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/img/vyond/vyond_logo.png">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://ga.vyond.com/zendesk_sso_login" data-toggle="dropdown">Help<span class="dropdown-caret"></span></a>
+    <ul class="dropdown-menu dropdown-menu-help">
+
+        <li>
+            <a href="#" onclick="zE.activate({hideOnClose: true});amplitudeTrackCtaHelp('quick_search');return false;">Quick Search</a>
+        </li>
+        <li>
+            <a href="https://ga.vyond.com/zendesk_sso_login" onclick="amplitudeTrackCtaHelp('help_center');" target="_blank">Help Center</a>
+        </li>
+        <li>
+            <a href="https://product.vyond.com/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">What’s New</a>
+        </li>
+    </ul>
+</li>
+
+<script>
+    $('.dropdown-menu-help').click(function(e) {
+        e.stopPropagation();
+    });
+</script>
+<li class="dropdown">
+    <a class="hidden-sm hidden-md hidden-lg" href="/style">Create a Video</a>
+    <a class="hidden-sm hidden-md hidden-lg dropdown-toggle" href="/style" data-toggle="dropdown"><span class="dropdown-caret"></span></a>
+    <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/style">Create a Video</a><span class="SplitButton_subsidiaryPartContainer__1MQSl"><a class="btn btn-orange dropdown-toggle" href="/style" data-toggle="dropdown"><span class="dropdown-caret"></span></span</span></a>
+    <ul class="dropdown-menu dropdown-menu-create">
+
+        <li>
+            <a href="/style" onclick="amplitudeTrackCtaHelp('quick_search');">Create a Video</a>
+        </li>
+        <li>
+            <a href="/cc/edit?from=videolist" onclick="amplitudeTrackCtaHelp('help_center');">Create a Character</a>
+        </li>
+	<li class="divider"></li>
+        <li>
+            <a href="http://www.vyond.com/showcase/templates/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">Browse Template Library</a>
+        </li>
+    </ul>
+</li>
+
+<script>
+    $('.dropdown-menu-create').click(function(e) {
+        e.stopPropagation();
+    });
+</script>
+<li class="dropdown">
+    <a class="dropdown-toggle" href="https://app.vyond.com/v2/profile" data-toggle="dropdown">
+        <span class="hidden-sm hidden-md hidden-lg">Your Account</span>
+        <div class="site-nav__profile-image">
+            <div class="badge-circle">JC</div>
+        </div><span class="dropdown-caret"></span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-user">
+        <li class="dropdown-user-profile">
+            <div class="dropdown-user-profile__display-name">
+                Joseph Crosman            </div>
+            <div class="dropdown-user-profile__status">
+                Free trial | <a href="https://www.vyond.com/pricing">Upgrade now</a>            </div>
+        </li>
+        <li class="divider"></li>
+        <li><a href="https://app.vyond.com/v2/profile">Profile Settings</a></li>
+        <li><a href="https://app.vyond.com/v2/users/list">Users</a></li>
+        <li><a href="https://app.vyond.com/v2/security">Security</a></li>
+        <li><a href="https://app.vyond.com/v2/subscription">Subscription</a></li>
+        <li class="divider"></li>
+        <li><a href="https://app.vyond.com/video/list" onClick="amplitudeTrackSwitchVideoMaker('Go to Vyond Studio')">Go to Vyond Studio</a></li>
+        <li class="divider"></li>
+        <li><a class="gtm-logout" href="https://ga.vyond.com/logoff">Log Out</a></li>
+    </ul>
+</li>
+
+<script>
+    $('.dropdown-menu-user').click(function(e) {
+        e.stopPropagation();
+    });
+</script>
+                </ul>
+            </div>
+    </div>
+</div>
+
+<script>
+    $('.logout-link').click(function(){
+        amplitudeTrackEvent(AMPLITUDE_EVENT.LOGOUT, null);
+    });
+</script>
 
 <!-- END OF HEADER -->
 
