@@ -75,9 +75,6 @@ module.exports = function (req, res, url) {
 var srv_tz_os = -4, view_name = "go", user_cookie_name = "u_info";
 var user_role = 9;
 </script>
-<script>
-$movieId = ' + flashvars.movieId + '
-</script>
 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/common_combined.js.gz.js"></script>
 <script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
 <script type="text/javascript">
@@ -152,7 +149,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <span class="icon-bar"></span>
                   </button>
                 <a class="navbar-brand" href="/videos/list" title="Go Back To The Video List">
-                    <span class="back"></span>
+                    <img alt="Vyond" src="/pages/img/vyond/left.png">
                 </a>
             </div>
 
@@ -267,7 +264,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <style>
 .link-pencil{display:inline-block;width:12px;height:0;padding-bottom:12px;background:transparent url('../pages/img/vyond/pencil.png') no-repeat 0 0;background-size:cover;margin-left:8px}
-.back{display:inline-block;width:12px;height:0;padding-bottom:12px;background:transparent url('../pages/img/vyond/left.png') no-repeat 0 0;background-size:cover;margin-left:8px}
 </body>
 </html>`);
 	return true;
