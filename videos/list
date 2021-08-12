@@ -199,7 +199,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 <!-- END OF HEADER -->
-
+<div class="warning">
+Vyond Studio (personal) is not done yet. this lvm project might take a while to complete. </div>
 <main>
 	<table>
 		<thead>
