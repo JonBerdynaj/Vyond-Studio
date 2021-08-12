@@ -40,7 +40,7 @@ module.exports = function (req, res, url) {
 					'isTemplate': '0', 'showButtons': '1', 'chain_mids': '', 'averageRating': 5, 'ratingCount': '1', 
 					'fb_app_url': '/', 'ad': 1, 'endStyle': 0, 'isWide': '1', 'pwm': 1, 
 					's3base': 'https://josephcrosmanplays532.github.io/s3base/,https://assets.vyond.com/', 
-					'initcb': 'flashPlayerLoaded', 'showshare': false ',
+					'initcb': 'flashPlayerLoaded', 'showshare': false,
 				},
 				allowScriptAccess: 'always',
 			};
