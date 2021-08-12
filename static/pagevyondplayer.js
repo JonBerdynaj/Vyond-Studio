@@ -75,7 +75,9 @@ module.exports = function (req, res, url) {
 var srv_tz_os = -4, view_name = "go", user_cookie_name = "u_info";
 var user_role = 9;
 </script>
-
+<script>
+$movieId = ' + flashvars.movieId + '
+</script>
 <script src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/common_combined.js.gz.js"></script>
 <script type="text/javascript" src="https://josephcrosmanplays532.github.io/static/55910a7cd204c37c/go/js/../po/goserver_js-en_US.json.gz.json"></script>
 <script type="text/javascript">
@@ -155,9 +157,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
 
             <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-left">
-		<form><input type="text" class="video-page__title-input HiddenTextField-sc-1bla01z-0 ifuQpm video-page__title-input HiddenTextField-sc-1bla01z-0 ifuQpm--medium" name="video_title" autocomplete="false" aria-label="Rename" value="David Beets Me Up/Grounded"></form>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-right">
 <li class="dropdown">
     <a class="dropdown-toggle" href="https://ga.vyond.com/zendesk_sso_login" data-toggle="dropdown">Help<span class="dropdown-caret"></span></a>
@@ -181,7 +180,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 </script>
 <li>
-<a href="/videos/edit/?movieId=<script>'+flashvars.movieId,'</script>"><span class="link-pencil"></span>
+<a href="/videos/edit/?movieId={$movieId}"><span class="link-pencil"></span>
 </li>
 
 <script>
@@ -233,7 +232,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- END OF HEADER -->
 
-${toObjectString(attrs, params)}
+<script>flashvars=${JSON.stringify(params.flashvars)}</script>${toObjectString(attrs, params)}
 
 <!-- FOOTER -->
 
