@@ -134,18 +134,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <li class="dropdown">
     <a class="hidden-sm hidden-md hidden-lg" href="/style">Create a Video</a>
-    <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/style">Create a Video</a><span class="SplitButton_subsidiaryPartContainer__1MQSl"><a class="dropdown-toggle" href="/style" data-toggle="dropdown"><span class="dropdown-caret"></span></span></span></a>
+    <span class="site-nav-btn hidden-xs"><a class="btn btn-orange" href="/style">Create a Video</a><span class="SplitButton_subsidiaryPartContainer__1MQSl"><a class="dropdown-toggle" href="/style" data-toggle="dropdown"><span class="dropdown-caret"></span></span</span></a>
     <ul class="dropdown-menu dropdown-menu-create">
 
         <li>
-            <a href="/style" onclick="amplitudeTrackCtaHelp('quick_search');">Create a Video</a>
+            <a href="#" onclick="zE.activate({hideOnClose: true});amplitudeTrackCtaHelp('quick_search');return false;">Quick Search</a>
         </li>
         <li>
-            <a href="/cc/edit?from=videolist" onclick="amplitudeTrackCtaHelp('help_center');">Create a Character</a>
+            <a href="https://ga.vyond.com/zendesk_sso_login" onclick="amplitudeTrackCtaHelp('help_center');" target="_blank">Help Center</a>
         </li>
-        <li class="divider"></li>
         <li>
-            <a href="http://www.vyond.com/showcase/templates/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">Browse Template Library</a>
+            <a href="https://product.vyond.com/" onclick="amplitudeTrackCtaHelp('whats_new');" target="_blank">What’s New</a>
         </li>
     </ul>
 </li>
