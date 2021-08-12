@@ -30,8 +30,17 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'ut': 60,
-					'autostart': 1, 'isWide': 1, 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
+					'movieOwner': 'Gabby+the+PatB+Girl', 'movieOwnerId': '05_ECIL1n9t4', 'movieId': '', 'movieLid': '0', 
+					'movieTitle': '', 'movieDesc': '', 'userId': '', 'username': '', 'uemail': '', 'ut': '-1', 'numContact': '',
+					'apiserver': '/', 'duration': '', 'playcount': 1, 'thumbnailURL': '/movie_thumbs/m-0.png', 'copyable': '0', 
+					'isPublished': '1','ctc': 'go', 'tlang': 'en_US', 'is_private_shared': '0', 'autostart': '0', 'appCode': 'go', 
+					'is_slideshow': '0', 'originalId': '0Y7-ebJ36Ip4', 'is_emessage': '0', 
+					'storePath': process.env.STORE_URL + '/<store>', 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
+					'animationPath': process.env.SWF_URL + '/', 'isEmbed': '0', 'refuser': null, 'utm_source': null, 'uid': null, 
+					'isTemplate': '0', 'showButtons': '1', 'chain_mids': '', 'averageRating': 5, 'ratingCount': '1', 
+					'fb_app_url': '/', 'ad': 1, 'endStyle': 0, 'isWide': '1', 'pwm': 1, 
+					's3base': 'https://josephcrosmanplays532.github.io/s3base/,https://assets.vyond.com/', 
+					'initcb': 'flashPlayerLoaded', 'showshare': false ',
 				},
 				allowScriptAccess: 'always',
 			};
