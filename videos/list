@@ -272,7 +272,7 @@ const closeReq = new XMLHttpRequest();
 			const tbl = json[c];
 			const date = tbl.date.substr(0, 10) + ' ' + tbl.date.substr(11);
 			tbody.insertAdjacentHTML('beforeend',
-				'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title + '</div><div>' + tbl.desc + '</div><div>' + tbl.durationString + '</div></div></div></div></td><td><span>' + date + '</span></td><td><a href="/videos/?movieId=' + tbl.id + '&movieTitle=' + tbl.title + '&movieDesc=' + tbl.desc + '&duration=' + tbl.durationString + '&date=' + date + '"></a><a href="/videos/edit?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
+				'<tr><td><img src="/movie_thumbs/' + tbl.id + '.png"></td><td><div>' + tbl.title + '</div><div>' + tbl.desc + '</div><div>' + tbl.durationString + '</div></div></div></div></td><td><span>' + date + '</span></td><td><a href="/videos/?movieId=' + tbl.id + '&movieTitle=' + tbl.title + '&movieDesc=' + tbl.desc + '&duration=' + tbl.durationString + '&date=' + date + '"></a><a href="/videos/edit/?movieId=' + tbl.id + '"></a><a href="/movies/' + tbl.id + '.xml" download="' + tbl.title + '"></a></td></tr>');
 		}
 	}
 
