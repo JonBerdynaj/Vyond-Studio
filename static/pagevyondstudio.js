@@ -32,7 +32,7 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					/*hm, it looks like that the goapi cannot handle this much flashvars stuff. lets drop it down and make it original again.
+					/* hm, it looks like that the goapi cannot handle this much flashvars stuff. lets drop it down and make it original again.
 					'movieId': '', 'loadas': 0, 'asId': '', 'originalId': '', 'apiserver': '/',
 					'storePath': process.env.STORE_URL + '/<store>', 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
 					'animationPath': process.env.SWF_URL + '/', 'userId': '0DyHqK6Yj9dM', 'username': 'good bois', 'uemail': 'crazy suitcase',
