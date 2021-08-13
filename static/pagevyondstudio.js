@@ -28,7 +28,7 @@ module.exports = function (req, res, url) {
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`
 			attrs = {
 				data: process.env.SWF_URL + '/go_full.swf',
-				type: 'application/x-shockwave-flash', width: '100%', height: '100%', id: 'Studio',
+				type: 'application/x-shockwave-flash', width: '100%', height: '100%',
 			};
 			params = {
 				flashvars: {
