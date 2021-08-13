@@ -460,12 +460,6 @@ $(function() {
 
 <!-- FOOTER -->
 
-<footer class="site-footer site-footer--light">
-    <div class="container">
-        <a href="https://www.vyond.com/terms">Terms of Service</a> | <a href="https://www.vyond.com/privacy">Privacy Policy</a> | <a href="https://www.vyond.com/cookies">Cookie Policy</a>
-    </div>
-</footer>
-
 
 <div id="studio_container" style="display: none;">
     <div id="studio_holder"><!-- Full Screen Studio -->
