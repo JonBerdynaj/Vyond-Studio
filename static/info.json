@@ -7,6 +7,13 @@
 			"statusCode": 302,
 			"content": ""
 		},
+		"/video/list": {
+			"headers": {
+				"Location": "/vs_html5_disabled"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
 		"/$": {
 			"headers": {
 				"Location": "/videos/list"
@@ -42,6 +49,11 @@
 			}
 		},
 		"style(.*)": {
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"vs_html5_disabled(.*)": {
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
