@@ -32,7 +32,6 @@ module.exports = function (req, res, url) {
 			};
 			params = {
 				flashvars: {
-					/* hm, it looks like that the goapi cannot handle this much flashvars stuff. lets drop it down and make it original again.
 					'movieId': '', 'loadas': 0, 'asId': '', 'originalId': '', 'apiserver': '/',
 					'storePath': process.env.STORE_URL + '/<store>', 'clientThemePath': process.env.CLIENT_URL + '/<client_theme>',
 					'animationPath': process.env.SWF_URL + '/', 'userId': '0DyHqK6Yj9dM', 'username': 'good bois', 'uemail': 'crazy suitcase',
@@ -44,11 +43,6 @@ module.exports = function (req, res, url) {
 					's3base': 'https:\/\/josephcrosmanplays532.github.io\/s3base\/', 'st': '', 'uisa': 0,
 					'u_info_school': 'OjI6a2JxQzN0MFNSKzFTYW4wTENRc01PZ2N6TURkZ0J3OWFmTzRjeW9aS3l1ak04MCtnUE5CUFo3Y0hmT0JDZndlMDlCM1V0VVVfc05pTU41cGVHYXpKOXV4YVpPZG9icHNoMHNHZmtiWjMxRnpTYlFXNDdPNHk0PQ==',
 					'tm': 'FIN', 'tray': 'custom', 'uplp': 0, 'isWide': 1, 'presaveId': presave,
-					*/
-					'apiserver': '/', 'storePath': process.env.STORE_URL + '/<store>', 'isEmbed': 1, 'ctc': 'go',
-					'ut': 60, 'bs': 'default', 'appCode': 'go', 'page': '', 'siteId': 'go', 'lid': 13, 'isLogin': 'Y', 'retut': 1,
-					'clientThemePath': process.env.CLIENT_URL + '/<client_theme>', 'themeId': 'business', 'tray': 'custom', 
-					'tlang': 'en_US', 'presaveId': presave, 'goteam_draft_only': 1, 'isWide': 1, 'nextUrl': '/pages/html/list.html',
 				},
 				allowScriptAccess: 'always',
 			};
