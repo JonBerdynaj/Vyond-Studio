@@ -18,7 +18,6 @@ const mvl = require('./movie/load');
 const mvL = require('./movie/list');
 const mvm = require('./movie/meta');
 const mvs = require('./movie/save');
-const mvr = require('./movie/redirect');
 const mvt = require('./movie/thmb');
 const thL = require('./theme/list');
 const thl = require('./theme/load');
@@ -42,7 +41,6 @@ const functions = [
 	ast,
 	mvm,
 	mvl,
-	mvr,
 	mvs,
 	mvt,
 	tsv,
