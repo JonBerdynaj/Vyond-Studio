@@ -14,6 +14,13 @@
 			"statusCode": 302,
 			"content": ""
 		},
+		"/videomaker/full": {
+			"headers": {
+				"Location": "/go_full"
+			},
+			"statusCode": 302,
+			"content": ""
+		},
 		"/$": {
 			"headers": {
 				"Location": "/videos/list"
