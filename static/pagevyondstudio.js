@@ -42,7 +42,7 @@ module.exports = function (req, res, url) {
 					'msg_index': '', 'ad': 0, 'has_asset_bg': 0, 'has_asset_char': 0, 'initcb': 'studioLoaded', 'retut': 0,
 					's3base': 'https:\/\/josephcrosmanplays532.github.io\/s3base\/', 'st': '', 'uisa': 0,
 					'u_info_school': 'OjI6a2JxQzN0MFNSKzFTYW4wTENRc01PZ2N6TURkZ0J3OWFmTzRjeW9aS3l1ak04MCtnUE5CUFo3Y0hmT0JDZndlMDlCM1V0VVVfc05pTU41cGVHYXpKOXV4YVpPZG9icHNoMHNHZmtiWjMxRnpTYlFXNDdPNHk0PQ==',
-					'tm': 'FIN', 'tray': 'custom', 'uplp': 0, 'isWide': 1,
+					'tm': 'FIN', 'tray': 'custom', 'uplp': 0, 'isWide': 1, 'presaveId': presave, '
 				},
 				allowScriptAccess: 'always',
 			};
